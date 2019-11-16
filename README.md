@@ -1,6 +1,13 @@
+# Made for Trijam \#45
+Theme: Communication Kills
+Time limit: 3 hours
+
+
 # Ready set go!
 
-8:10pm Sun: Begin
+8:10pm Sat: Begin
+11:00pm Sat: Finish!
+
 
 # Assets used:
 

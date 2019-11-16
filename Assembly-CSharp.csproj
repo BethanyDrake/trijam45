@@ -58,6 +58,8 @@
      <Compile Include="Assets\CameraController.cs" />
      <Compile Include="Assets\PhoneController.cs" />
      <Compile Include="Assets\ProjectileManagerController.cs" />
+     <Compile Include="Assets\targetController.cs" />
+     <Compile Include="Assets\targetManagerController.cs" />
      <None Include="Assets\Smartphone\StandardColorMask.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/bethany/Desktop/Trijam45/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -17,6 +17,8 @@ public class ProjectileManagerController : MonoBehaviour
     public GameObject cannon;
     public float maxRotation;
 
+    private AudioSource source;
+
     public GameObject phone;
     // Update is called once per frame
     void Update()
@@ -25,6 +27,7 @@ public class ProjectileManagerController : MonoBehaviour
 
         if (Input.GetButton("Fire1") && timeSinceLastFired > fireRechargeTime)
         {
+            source.Play();
             timeSinceLastFired = 0;
             GameObject newPhone = Instantiate(phone, cannon.transform.position, cannon.transform.rotation) as GameObject;
             Rigidbody rb = newPhone.GetComponent(typeof(Rigidbody)) as Rigidbody;
@@ -33,5 +36,13 @@ public class ProjectileManagerController : MonoBehaviour
             rb.AddForce(newPhone.transform.forward * thrust);
             rb.AddTorque((new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f) )) * maxRotation);
         }
+
+
     }
+
+    void Awake () {
+
+        source = GetComponent<AudioSource>();
+    }
+
 }
